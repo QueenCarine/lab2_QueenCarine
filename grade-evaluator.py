@@ -157,8 +157,8 @@ def evaluate_grades(data):
     print(f"Formative Total: {formative_grade:.2f}/60 ({f_pct:.1f}%)")
     print(f"Summative Total: {summative_grade:.2f}/40 ({s_pct:.1f}%)")
     print(f"Total Grade: {total_grade:.2f}/100")
-    print(f"GPA: {gpa:.2f}")
-    print(f"Overall Standing: {'PASSED' if passed else 'FAILED'}")
+    print(f"GPA: {gpa:.3f}")
+    print(f"Final Decision: {'PASSED' if passed else 'FAILED'}")
 
     if resubmit:
         print("\nEligible for resubmission (highest-weight failed formative):")
