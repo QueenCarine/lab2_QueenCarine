@@ -11,7 +11,7 @@ A Python application and a Bash script that calculate a student's final academic
 
 ### Grade evaluator
 ```bash
-python grade-evaluator.py
+python3 grade-evaluator.py
 ```
 Enter the CSV filename when prompted (e.g., `grades.csv`).
 
@@ -34,13 +34,16 @@ This moves `grades.csv` into `archive/` as `grades_YYYYMMDD-HHMMSS.csv`, creates
 Formative Total: 34.00/60 (56.7%)
 Summative Total: 26.00/40 (65.0%)
 Total Grade: 60.00/100
-GPA: 3.00
-Overall Standing: PASSED
+GPA: 3.000
+Final Decision: PASSED
 
 Eligible for resubmission (highest-weight failed formative):
   - Group Exercise (score: 40, weight: 20)
   - Functions and Debugging Lab (score: 45, weight: 20)
 ```
+
+## Testing
+The logic was cross-checked against the provided ALU transcript sheet. For its sample data, the program gives Formative 44.40, Summative 32.50, GPA 3.845, PASSED, with Discussion Forum eligible for resubmission, matching the sheet.
 
 ## Notes
 No external libraries are used, only Python's built-in `csv`, `sys` and `os`.
